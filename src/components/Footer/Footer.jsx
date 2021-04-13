@@ -15,9 +15,12 @@ const Footer = () => {
 
   return (
     <footer className="footer navbar-static-bottom">
-      {process.env.GATSBY_DUPA}
-      {process.env.GATSBY_TEST}
-      {process.env.AWS_S3_BUCKET}
+      <h2>ENVS</h2>
+      <span>{process.env.GATSBY_DUPA}</span>
+      <span>{process.env.GATSBY_TEST}</span>
+      <span>{process.env.AWS_S3_BUCKET}</span>
+      <span>{process.env.GATSBY_INSIDE}</span>
+      <span>{process.env.INSIDE_WITHOUT}</span>
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>
