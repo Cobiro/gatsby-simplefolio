@@ -14,7 +14,7 @@ const Footer = () => {
   const { isEnabled } = githubButtons;
 
   return (
-    <footer className="footer navbar-static-bottom">
+    <footer className="footer navbar-static-bottom change">
       <h2>ENVS</h2>
       <span>{process.env.GATSBY_DUPA}</span>
       <span>{process.env.GATSBY_TEST}</span>
