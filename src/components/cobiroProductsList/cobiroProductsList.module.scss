@@ -1,0 +1,13 @@
+@import '../../layout/style/globals';
+
+.splash {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+}
+.video {
+    position: relative;
+    z-index: 1;
+}

@@ -6,8 +6,6 @@ import GithubButtons from '../GithubButtons/GithubButtons';
 
 import { githubButtons } from '../../mock/data';
 
-
-
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
@@ -15,12 +13,6 @@ const Footer = () => {
 
   return (
     <footer className="footer navbar-static-bottom change">
-      <h2>ENVS</h2>
-      <span>{process.env.GATSBY_DUPA}</span>
-      <span>{process.env.GATSBY_TEST}</span>
-      <span>{process.env.AWS_S3_BUCKET}</span>
-      <span>{process.env.GATSBY_INSIDE}</span>
-      <span>{process.env.INSIDE_WITHOUT}</span>
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>
