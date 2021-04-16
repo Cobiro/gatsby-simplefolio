@@ -16,3 +16,8 @@
 @import './sections/projects';
 
 @import './vendor/css/font-awesome.min.css';
+
+.img-game-cover {
+  max-height: 250px;
+  object-fit: cover;
+}

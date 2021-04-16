@@ -25,15 +25,21 @@ const CobiroProductsList = () => {
         <Title title="Products" />
         <div className="row mb-1">
           {products.map((item) => (
-            <div className="col-6" key={item.id}>
-              <div className="card">
-                <img className="card-img-top" src={item.mainImageUrl} alt={item.name} />
-                <div className="card-body">
-                  <h5 className="card-title">{item.name}</h5>
-                  <p className="card-text">{item.price.formatted}</p>
-                  <a href="/" title="Add to cart" className="cta-btn cta-btn--hero">
-                    Add to cart
-                  </a>
+            <div className="col-3 pb-3" key={item.id}>
+              <div className="card shadow-sm h-100">
+                <img
+                  className="card-img-top img-game-cover"
+                  src={item.mainImageUrl}
+                  alt={item.name}
+                />
+                <div className="card-body d-flex justify-content-between flex-column">
+                  <p className="card-text mb-5">{item.name}</p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <a href="/" title="Add to cart" className="cta-btn cta-btn--hero">
+                      Add to cart
+                    </a>
+                    <strong>{item.price.formatted}</strong>
+                  </div>
                 </div>
               </div>
             </div>
