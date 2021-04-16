@@ -25,7 +25,7 @@ const CobiroProductsList = () => {
         <Title title="Products" />
         <div className="row mb-1">
           {products.map((item) => (
-            <div className="col-3 pb-3" key={item.id}>
+            <div className="col-3 pb-4" key={item.id}>
               <div className="card shadow-sm h-100">
                 <img
                   className="card-img-top img-game-cover"
